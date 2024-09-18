@@ -32,16 +32,16 @@ class Fruit {
   }
 }
 
-$mango = new Fruit();
-$mango->set_name('Mango'); // OK
-// $mango->set_color('Yellow'); // Como es protegido no es accesible desde afuera
-// $mango->set_weight('300'); // Error: no es accesible desde afuera
+$mango = new Fruit();// Prueba sin argumentos para probar constructores y demas metodos 
+$mango->set_name('Mango'); 
+// $mango->set_color('Yellow'); // Error : Como es protegido no es accesible desde afuera
+// $mango->set_weight('300'); // Error: Como es privado no es accesible desde afuera
 
-/*
-En el caso del error de set_weigth y del set_color,  un metodo se puede detectar que existe pero esta protegido y
-el otro no lo detecta porque esta privado
+/*Private Se utiliza cuando deseas encapsular completamente la funcionalidad 
+y no permitir que las subclases accedan a estos elementos.*/
 
-*/
+/* Protected Se utiliza cuando quieres permitir que las subclases
+ accedan a ciertas propiedades o métodos */
 
 // Usando el método público para inicializar
 $mango->initialize('Mango', 'Yellow', 300);
