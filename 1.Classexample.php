@@ -17,7 +17,7 @@ class Fruit {
   function get_name() {
     return $this->name;
   }
-  function set_color($color) {
+  function set_color($color){
     $this->color = $color;
   }
   function get_color() {
@@ -25,10 +25,13 @@ class Fruit {
   }
 }
 //Creando objeto, $nombre = new Nombre_clase();
-$apple = new Fruit();
-//Haciendo uso de metodos publicos 
-$apple->set_name('Apple');
-$apple->set_color('Red');
+$apple = new Fruit('Apple', 'Red');
+
+
+//Haciendo uso de metodos publicos seria :
+
+//$apple->set_name('Apple');
+//$apple->set_color('Red');
 echo "Name: " . $apple->get_name();
 echo "<br>";
 echo "Color: " . $apple->get_color();

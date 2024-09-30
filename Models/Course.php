@@ -6,8 +6,7 @@ class Course {
 
     public function saludo(){
 
-        echo "Saludo desde la clase course"
-
+        echo "Saludo desde la clase course";
     }
 
 }
